@@ -1,0 +1,142 @@
+:root {
+  --light-gray: #F9F9F9;
+  --white: #FFF;
+  --dark-blue: #414057;
+  --light-blue: #8483A1;
+  --serif: 'PT serif', serif;
+  --sans-serif: 'Poppins', sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body { 
+  min-height: 100vh;
+  max-width: 1440px;
+  padding: 1rem;
+  margin: 0 auto;
+  font-family: var(--sans-serif);
+  background-color: var(--white);
+  box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+.header__title {
+  width: 278px;
+  font-family: var(--serif);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+  color: var(--dark-blue);
+}
+.description {
+  color: var(--light-blue);
+}
+.description__subtitle {
+  width: 122px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+}    
+.description__text {
+  width: 307px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  max-width: 370px;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);  
+  gap: 1.5rem;
+}
+.team-item {
+  display: flex;
+}
+.team-item:nth-child(even) {
+  padding-top: 5rem;
+}
+.member {
+  margin: 0;
+}
+.member__img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+}
+.member__name {
+  padding-top: .7rem;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--dark-blue);
+}
+.member__position {
+  height: fit-content;
+  padding: .5rem .1rem;
+  padding-top: .4rem;
+  margin: 0;
+  margin-left: .3rem;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: var(--white);   
+  background-color: var(--dark-blue);
+  box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.15);
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+
+@media only screen and (min-width: 992px) {
+  body {
+    padding: 5rem 10rem;
+  }
+  .team-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  } 
+  .team-item:nth-child(even) {
+    padding-top: 0;
+  }
+  .team-item:nth-child(2),
+  .team-item:nth-child(5) {
+    padding-top: 8rem; 
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .description {
+    width: 38vw;
+    padding-top: 1rem;
+  }
+  .description__text {
+    width: auto;
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .member__name {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .member__position {
+    font-size: 12px;
+    line-height: 26px;
+  }
+}
