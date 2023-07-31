@@ -104,8 +104,8 @@ img {
 .grid-team__item {
   display: flex;
 }
-.team-item:nth-child(even) {
-  padding-top: 5rem;
+.grid-team__item:nth-child(even) {
+  padding-top: 4.8rem;
 }
 .member {
   margin: 0;
@@ -146,7 +146,7 @@ img {
     display: flex;
     justify-content: space-between;
   }
-  .description__text {
+  .team__text {
     line-height: 27px;
   }
   .grid-team {
@@ -157,7 +157,7 @@ img {
   }
   .grid-team__item:nth-child(2),
   .grid-team__item:nth-child(5) {
-    padding-top: 8rem; 
+    padding-top: 9.9rem; 
   }
   .member__name {
     line-height: 27px;
