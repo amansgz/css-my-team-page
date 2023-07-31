@@ -30,10 +30,13 @@
   --font-size-text: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3824)), 1.8rem);
   --font-size-grid-member-name: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3824)), 1.8rem);
   --font-size-grid-member-position: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.1912)), 1.2rem);
-
+   --font-size-link: 1.4rem;
 
   --section-block-padding: clamp(7.1rem, calc(7.1rem + ((1vw - 0.32rem) * 3.7285)), 11rem);
   --section-inline-padding: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 22.0841)), 24.3rem);
+
+  --footer-block-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 4rem);
+  --footer-inline-padding: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 22.0841)), 24.3rem);
 
   --grid-gap: clamp(2.5rem, calc(2.5rem + ((1vw - 0.32rem) * 4.0153)), 6.7rem);
 }
@@ -65,6 +68,13 @@ figure,
 img {
   display: block;
 }
+a {
+  font-size: var(--font-size-link);
+  text-decoration: none;
+}
+
+
+
 .section-team {
   padding: var(--section-block-padding) var(--section-inline-padding);
 }
@@ -140,6 +150,14 @@ img {
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
+.footer {
+  padding: var(--footer-block-padding) var(--footer-inline-padding);
+  text-align: center;
+}
+.footer a {
+  font-size: 1.2rem;
+  color: var(--clr-primary-heading);
+}
 
 @media only screen and (min-width: 992px) {
   .team__header {
