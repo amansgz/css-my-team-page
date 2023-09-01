@@ -97,7 +97,7 @@ a {
   text-transform: uppercase;
   color: var(--clr-secondary-heading);
 }    
-.team__text {
+.team__description {
   max-width: 40ch;
   margin-bottom: clamp(3.8rem, calc(3.8rem + ((1vw - 0.32rem) * 5.5449)), 9.6rem);
   font-size: var(--font-size-text);
@@ -106,33 +106,33 @@ a {
   text-align: left;
 }
 
-.grid-team {
+.team__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);  
   gap: var(--grid-gap);
 }
-.grid-team__item {
+.team__grid__item {
   display: flex;
 }
-.grid-team__item:nth-child(even) {
+.team__grid__item:nth-child(even) {
   padding-top: 4.8rem;
 }
-.member {
+.team__member__photo {
   margin: 0;
 }
-.member__img {
+.team__member__photo img {
   width: clamp(12.5rem, calc(12.5rem + ((1vw - 0.32rem) * 10.8031)), 23.8rem);
   object-fit: cover;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
-.member__name {
+.team__member__name {
   padding-top: .7rem;
   font-size: var(--font-size-grid-member-name);
   font-weight: var(--font-weight-bold);
   line-height: 21px;
   color: var(--clr-grid-member-name);
 }
-.member__position {
+.team__member__position {
   height: fit-content;
   padding: .5rem .1rem;
   padding-top: .4rem;
@@ -154,33 +154,33 @@ a {
   padding: var(--footer-block-padding) var(--footer-inline-padding);
   text-align: center;
 }
-.footer a {
+.footer__attribution {
   font-size: 1.2rem;
   color: var(--clr-primary-heading);
 }
 
 @media only screen and (min-width: 992px) {
-  .team__header {
+  .team__content {
     display: flex;
     justify-content: space-between;
   }
-  .team__text {
+  .team__description {
     line-height: 27px;
   }
-  .grid-team {
+  .team__grid {
     grid-template-columns: repeat(3, 1fr);
   } 
-  .grid-team__item:nth-child(even) {
+  .team__grid__item:nth-child(even) {
     padding-top: 0;
   }
-  .grid-team__item:nth-child(2),
-  .grid-team__item:nth-child(5) {
+  .team__grid__item:nth-child(2),
+  .team__grid__item:nth-child(5) {
     padding-top: 9.9rem; 
   }
-  .member__name {
+  .team__member__name {
     line-height: 27px;
   }
-  .member__position {
+  .team__member__position {
     line-height: 26px;
   }
 }
