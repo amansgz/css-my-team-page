@@ -1,10 +1,18 @@
-<h1 align="center">My Team Page</h1>
+# My Team Page
 
-<div align="center">
-  This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a>
-</div>
+## The challenge
+Create my team page following the figma design.
 
-<div align="center">
+## User story
+I can see a page following the given design
+
+
+## Built With
+
+- CSS
+
+
+<div>
   <h3>
     <a href="https://amansgz.github.io/css-my-team-page/">
       Demo
@@ -22,16 +30,5 @@
 
 ![screenshot](./assets/preview.png)
 
-## The challenge
 
-User story: I can see a page following the given design
-
-
-## Built With
-
-- CSS
-
-## Author
-
-- GitHub [@amansgz](https://github.com/amansgz)
-- DevChallenges [@amansgz](https://devchallenges.io/portfolio/amansgz)
+This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a>
