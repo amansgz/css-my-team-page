@@ -17,18 +17,10 @@ I can see a page following the given design
     <a href="https://amansgz.github.io/css-my-team-page/">
       Demo
     </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/solutions/OIJKoONPF8wvyEAiV7Qk">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U">
-      Challenge
-    </a>
   </h3>
 </div>
 
 ![screenshot](./assets/preview.png)
 
 
-This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a>
+This application/site was created as a submission to <a href="https://legacy.devchallenges.io/paths/responsive-web-developer">Devchallenges</a>
