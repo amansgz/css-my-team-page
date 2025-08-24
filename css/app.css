@@ -33,7 +33,10 @@ body {
   max-width: 1440px;
   font-family: var(--font-family-body);
 }
-
+main {
+  padding: 1rem;
+  margin: auto;
+}
 .hero-section h1 {
   margin-bottom: 3rem;
   font-family: var(--font-family-heading);
@@ -59,7 +62,8 @@ body {
 .team-members-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: var(--grid-gap);
+  gap: 5px;
+  max-width: 1000px;
 }
 .crew-member-card {
   display: flex;
@@ -67,36 +71,35 @@ body {
 .crew-member-card:nth-child(even) {
   padding-top: 4.8rem;
 }
-.team__member__photo {
-  margin: 0;
+.image-container {
+  max-width: 340px;
 }
-.team__member__photo img {
-  width: clamp(12.5rem, calc(12.5rem + ((1vw - 0.32rem) * 10.8031)), 23.8rem);
-  object-fit: cover;
+.image-container img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
-.team__member__name {
+.crew-member-card h3 {
   padding-top: 0.7rem;
-  font-size: var(--font-size-grid-member-name);
-  font-weight: var(--font-weight-bold);
-  line-height: 21px;
-  color: var(--clr-grid-member-name);
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--clr-member-name);
 }
-.team__member__position {
+.crew-member-card p {
   height: fit-content;
   padding: 0.5rem 0.1rem;
   padding-top: 0.4rem;
   margin: 0;
   margin-left: 0.3rem;
-  font-size: var(--font-size-grid-member-position);
+  font-size: 0.7rem;
   word-spacing: 4px;
   letter-spacing: 1px;
-  line-height: 14px;
   text-transform: uppercase;
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  color: var(--clr-grid-member-position-text);
-  background-color: var(--clr-background-grid-member-position);
+  color: var(--clr-member-position);
+  background-color: var(--clr-background-member-position);
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.15);
 }
 
@@ -110,13 +113,6 @@ body {
 }
 
 @media only screen and (min-width: 992px) {
-  .team__content {
-    display: flex;
-    justify-content: space-between;
-  }
-  .team__description {
-    line-height: 27px;
-  }
   .team-members-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -126,11 +122,5 @@ body {
   .crew-member-card:nth-child(2),
   .crew-member-card:nth-child(5) {
     padding-top: 9.9rem;
-  }
-  .team__member__name {
-    line-height: 27px;
-  }
-  .team__member__position {
-    line-height: 26px;
   }
 }
