@@ -25,6 +25,9 @@
   margin: 0;
 }
 
+/***********/
+/* Layout */
+/***********/
 body {
   display: flex;
   flex-direction: column;
@@ -37,6 +40,10 @@ main {
   padding: 1rem;
   margin: auto;
 }
+
+/*****************/
+/* Hero Section */
+/****************/
 .hero-section h1 {
   margin-bottom: 3rem;
   font-family: var(--font-family-heading);
@@ -58,7 +65,10 @@ main {
   color: var(--clr-text);
   line-height: 1.5;
 }
-/*screen readers only*/
+
+/**************/
+/* Utilities */
+/*************/
 .sr-only {
   position: absolute;
   width: 1px;
@@ -70,6 +80,10 @@ main {
   white-space: nowrap;
   border-width: 0;
 }
+
+/**********************/
+/* Team Members Grid */
+/**********************/
 .team-members-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -112,7 +126,9 @@ main {
   background-color: var(--clr-background-member-position);
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.15);
 }
-
+/***********/
+/* Footer */
+/***********/
 .footer {
   padding: 5rem 0 2rem;
   color: var(--clr-light-blue);
@@ -128,6 +144,10 @@ main {
   text-decoration: underline;
   color: var(--clr-dark-blue);
 }
+
+/******************/
+/* Media queries */
+/******************/
 @media only screen and (min-width: 768px) {
   .hero-section {
     display: flex;
