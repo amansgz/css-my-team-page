@@ -1,26 +1,48 @@
 # My Team Page
 
-## The challenge
-Create my team page following the figma design.
+This project is a simple and responsive webpage that displays a team's information. It was developed as a challenge to practice using HTML and CSS, focusing on a clean design and good developments practices.
 
-## User story
-I can see a page following the given design
+---
 
+## Features
 
-## Built With
+- **Responsive Design:** The page adapts to different screen sizes, from mobile devices to desktops.
+- **Grid Layout:** CSS Grid is used to create a flexible and organized layout for the team members.
+- **CSS Variables:** Custom variables are implemented to manage colors and font, ensuring consistency and making the code easier to maintain.
+- **Fluid Typography:** The `clamp()` function is used for typography, providing smooth and readable font scaling on any device.
+- **Accessibility:** The `.sr-only` component was included to provide descriptive text for screen readers, improving the site's accesibility.
 
-- CSS
+---
 
+## Technologies Used
 
-<div>
-  <h3>
-    <a href="https://amansgz.github.io/css-my-team-page/">
-      Demo
-    </a>
-  </h3>
-</div>
+- **HTML5:** For the structure and content of the page.
+- **CSS3:** For styling the page and achieving the proposed design.
 
-![screenshot](./assets/preview.png)
+---
 
+## Links
 
-This application/site was created as a submission to <a href="https://legacy.devchallenges.io/paths/responsive-web-developer">Legacy Devchallenges</a>
+- **Live Demo:** [my-team-page](https://amansgz.github.io/css-my-team-page/)
+
+---
+
+## How to Use
+
+1. **Clone the repository:**
+
+```bash
+git clone https://github.com/amansgz/css-my-team-page.git
+```
+
+2. **Open the project:**
+   Simply open the `index.html` file in your preferred web browser to view the solution.
+
+---
+
+## Credits and Acknowledgments
+
+This project was built as a solution to a design challenge from Legacy Devchallenges.
+
+- **Design:** Legacy Devchallenges
+- **Coded by:** @amansgz
