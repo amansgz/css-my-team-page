@@ -54,7 +54,7 @@ main {
 .hero-section p {
   max-width: 40ch;
   margin-bottom: 3rem;
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.3rem);
   color: var(--clr-text);
   line-height: 1.5;
 }
@@ -123,6 +123,14 @@ main {
   color: var(--clr-primary-heading);
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 70px;
+  }
+}
 @media only screen and (min-width: 992px) {
   .team-members-grid {
     grid-template-columns: repeat(3, 1fr);
