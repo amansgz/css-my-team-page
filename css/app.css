@@ -1,44 +1,19 @@
 :root {
   /* COLORS */
-  --light-gray: #F9F9F9;
-  --white: #FFF;
+  --light-gray: #f9f9f9;
   --dark-blue: #414057;
-  --light-blue: #8483A1;
-  
-  --clr-background-body: var(--white);
+  --light-blue: #8483a1;
+
   --clr-primary-heading: var(--dark-blue);
   --clr-secondary-heading: var(--dark-blue);
   --clr-text: var(--light-blue);
-  --clr-grid-member-name-text: var(--dark-blue);
-  --clr-grid-member-position-text: var(--white);
-  --clr-background-grid-member-position: var(--dark-blue);
+  --clr-member-name: var(--dark-blue);
+  --clr-member-position: #fff;
+  --clr-background-member-position: var(--dark-blue);
 
-  /* FONT FAMILY */
-  --ff-primary: 'Poppins', sans-serif;
-  --ff-secondary: 'PT serif', serif;
-
-  --ff-body: var(--ff-primary);
-  --ff-primary-heading: var(--ff-secondary);
-
-  /* FONT WEIGHT */
-  --font-weight-bold: 600;
-  --font-weight-bolder: 700;
-
-  /*FONT SIZES*/
-  --font-size-h1: 3.6rem;
-  --font-size-h2: 1.8rem;
-  --font-size-text: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3824)), 1.8rem);
-  --font-size-grid-member-name: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.3824)), 1.8rem);
-  --font-size-grid-member-position: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.1912)), 1.2rem);
-   --font-size-link: 1.4rem;
-
-  --section-block-padding: clamp(7.1rem, calc(7.1rem + ((1vw - 0.32rem) * 3.7285)), 11rem);
-  --section-inline-padding: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 22.0841)), 24.3rem);
-
-  --footer-block-padding: clamp(2rem, calc(2rem + ((1vw - 0.32rem) * 1.912)), 4rem);
-  --footer-inline-padding: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 22.0841)), 24.3rem);
-
-  --grid-gap: clamp(2.5rem, calc(2.5rem + ((1vw - 0.32rem) * 4.0153)), 6.7rem);
+  /* FONTS */
+  --font-family-body: "Poppins", sans-serif;
+  --font-family-heading: "PT serif", serif;
 }
 
 *,
@@ -64,7 +39,7 @@ body {
   font-family: var(--ff-body);
   background-color: var(--clr-background-body);
 }
-figure, 
+figure,
 img {
   display: block;
 }
@@ -72,8 +47,6 @@ a {
   font-size: var(--font-size-link);
   text-decoration: none;
 }
-
-
 
 .section-team {
   padding: var(--section-block-padding) var(--section-inline-padding);
@@ -96,10 +69,14 @@ a {
   text-align: left;
   text-transform: uppercase;
   color: var(--clr-secondary-heading);
-}    
+}
 .team__description {
   max-width: 40ch;
-  margin-bottom: clamp(3.8rem, calc(3.8rem + ((1vw - 0.32rem) * 5.5449)), 9.6rem);
+  margin-bottom: clamp(
+    3.8rem,
+    calc(3.8rem + ((1vw - 0.32rem) * 5.5449)),
+    9.6rem
+  );
   font-size: var(--font-size-text);
   color: var(--clr-text);
   line-height: 21px;
@@ -108,7 +85,7 @@ a {
 
 .team__grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--grid-gap);
 }
 .team__grid__item {
@@ -126,7 +103,7 @@ a {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 .team__member__name {
-  padding-top: .7rem;
+  padding-top: 0.7rem;
   font-size: var(--font-size-grid-member-name);
   font-weight: var(--font-weight-bold);
   line-height: 21px;
@@ -134,10 +111,10 @@ a {
 }
 .team__member__position {
   height: fit-content;
-  padding: .5rem .1rem;
-  padding-top: .4rem;
+  padding: 0.5rem 0.1rem;
+  padding-top: 0.4rem;
   margin: 0;
-  margin-left: .3rem;
+  margin-left: 0.3rem;
   font-size: var(--font-size-grid-member-position);
   word-spacing: 4px;
   letter-spacing: 1px;
@@ -169,13 +146,13 @@ a {
   }
   .team__grid {
     grid-template-columns: repeat(3, 1fr);
-  } 
+  }
   .team__grid__item:nth-child(even) {
     padding-top: 0;
   }
   .team__grid__item:nth-child(2),
   .team__grid__item:nth-child(5) {
-    padding-top: 9.9rem; 
+    padding-top: 9.9rem;
   }
   .team__member__name {
     line-height: 27px;
