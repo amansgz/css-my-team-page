@@ -32,6 +32,7 @@ body {
   min-height: 100vh;
   max-width: 1440px;
   font-family: var(--font-family-body);
+  color: var(--clr-text);
 }
 main {
   padding: 1rem;
@@ -114,14 +115,19 @@ main {
 }
 
 .footer {
-  padding: var(--footer-block-padding) var(--footer-inline-padding);
+  padding: 0.5rem;
   text-align: center;
 }
-.footer__attribution {
-  font-size: 1.2rem;
+.footer a {
+  text-decoration: none;
+  color: var(--clr-text);
+  transition: color 0.3s ease;
+}
+.footer a:hover,
+.footer a:focus {
+  text-decoration: underline;
   color: var(--clr-primary-heading);
 }
-
 @media only screen and (min-width: 768px) {
   .hero-section {
     display: flex;
