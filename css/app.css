@@ -56,15 +56,15 @@ body {
   line-height: 1.5;
 }
 
-.team__grid {
+.team-members-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--grid-gap);
 }
-.team__grid__item {
+.crew-member-card {
   display: flex;
 }
-.team__grid__item:nth-child(even) {
+.crew-member-card:nth-child(even) {
   padding-top: 4.8rem;
 }
 .team__member__photo {
@@ -117,14 +117,14 @@ body {
   .team__description {
     line-height: 27px;
   }
-  .team__grid {
+  .team-members-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  .team__grid__item:nth-child(even) {
+  .crew-member-card:nth-child(even) {
     padding-top: 0;
   }
-  .team__grid__item:nth-child(2),
-  .team__grid__item:nth-child(5) {
+  .crew-member-card:nth-child(2),
+  .crew-member-card:nth-child(5) {
     padding-top: 9.9rem;
   }
   .team__member__name {
